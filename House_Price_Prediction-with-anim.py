@@ -29,7 +29,7 @@ plt.show()
 def normalize(array):
     return (array - array.mean()) / array.std()
 
-# define number of training samples, 0.7 = 70%. We can take the first 70%since the values are randomized
+# define number of training samples, 0.7 = 70%. We can take the first 70% since the values are randomized
 num_train_samples = math.floor(num_house * 0.7)
 
 # define training data
@@ -67,7 +67,7 @@ tf_cost = tf.reduce_sum(tf.pow(tf_price_pred - tf_price, 2))/(2*num_train_sample
 
 
 #  Optimizer learning rate. The sieze of the steps down the gradient
-learning_rate = 0.1
+learning_rate = 0.05
 
 
 #  4. Define a Gradient descent optimizer that will minimize the loss defined in the operation "cost".
